@@ -10,18 +10,61 @@
     </head>
 
     <body>
-        <button id="save-button" onclick="render()">Draw</button>
+       
+        <header id="my-header">
+        <h1>BlackJack</h1>
+        </header>
+        <div>    
+      
+        <div class="left20">
+            <button id="start-button">Deal</button>    
+            <button id="save-button" >Draw</button>
+            <button id="stand-button">Stand</button>
+        
+            <button id="restart-button">Clear</button>
+        </div>
 
-        <h1></h1>
+        
+            <div class="left20">
+                <table id="table1">
+                    <thead>
+                    <th>Player</th>
+                    </thead>   
+                </table>
 
-        <table>
-            <tr>
-                <th>Test</th>
-            </tr>
-            <tbody id="rows">
+                <div class="totals">
+                    <h4>Player total</h4>
+                <div id="total-held">
+                    
+                </div>
+                </div>
+            </div>
+        
+        
+            <div class="left20">
+        
+                <table id="table2">
+                    <thead>
+                        <th>Dealer</th>
+                    </thead>   
+                </table>
+                <div class="totals">
+                    <h4>Dealer Total</h4>
+                <div id="dealer-total">
+    
+                </div>
+                </div>
+            </div>
+            
+        <div id="test"></div>
+        <div>
+            
+            
+            
+        </div>
+        <div id="result-div">
 
-            </tbody>
-        </table>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
