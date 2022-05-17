@@ -12,20 +12,49 @@
     <body>
         <h1>Blackjack</h1>
 
-        <div id="display">
+        <div id="start-display">
             <h4>Play Blackjack with Room 2!</h4>
             <p>Hit Start Game button to start a new game!</p>
         </div>
 
-        <button id="start-button" onclick="refresh();">Start Game</button>
+        <!-- <button id="start-button">Start Game</button> -->
 
-        <div id="">
+        <body onload="hide();">
+        
+            <button id="start-button" onclick="display(); start(); sum();">Start</button>
+        
+            <div id="everything">
+                <button id="save-button" onclick="render(); sum();">Draw</button>
+        
+                <button id="reset-button" onclick="refresh();">Reset</button>
+
+                <table>
+                    <tr>
+                        <th>Test</th>
+                    </tr>
+                    <tbody id="rows">
+
+                    </tbody>
+                </table>
+ 
+                <table>
+                    <tr>
+                        <th>Sum</th>
+                    </tr>
+                    <tbody id="sumrows">
+                        <tr id="final">
+                            <td id="data">
+        
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         <!-- <button id="save-button" onclick="render(); sum();">Draw</button>
-        <button id="reset-button" onclick="refresh();">Reset</button>
-        <button id="fold-button" onclick="refresh();">Fold</button> -->
-        </div>
-
-        <table id="player-1">
+                <button id="reset-button" onclick="refresh();">Reset</button>
+                <button id="fold-button" onclick="refresh();">Fold</button> -->
+        <!-- <table id="player-1">
             <tr>
                 <th>Player 1</th>
             </tr>
@@ -42,7 +71,7 @@
                     <td id="data"></td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
 
         <script src="index.js"></script>
     </body>

@@ -1,12 +1,27 @@
 
-const saveElement = document.getElementById("draw-button");
+const saveElement = document.getElementById("#draw-button");
 const resetElement = document.querySelector("#reset-button");
 const foldElement = document.querySelector("#fold-button");
 const startElement = document.querySelector("#start-button");
+const gameDisplayElement = document.querySelector("#game-display");
+// let displayStart = document.getElementById("start-display")
+//let displayGame = document.getElementById("game-display")
 
-let displayGame = document.getElementById("display")
-let dataElement = document.getElementById("data");
 let array = [];
+
+let displayElement = document.getElementById("everything");
+let dataElement = document.getElementById("data");
+
+console.log("hello world");
+
+function hide() {
+    displayElement.style.display = "none";
+}
+
+function display(){
+    displayElement.style.display = "block";
+}
+
 
 function render() {
 
@@ -39,9 +54,7 @@ function fold() {
 
 }
 
-function startGame() {
 
-}
 
 
 /*blackjack logic
