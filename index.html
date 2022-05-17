@@ -10,18 +10,51 @@
     </head>
 
     <body>
-        <button id="save-button" onclick="render()">Draw</button>
+        <h1>Blackjack</h1>
 
-        <h1></h1>
+        <div id="display">
+            <h4>Play Blackjack with Room 2!</h4>
+            <p>Hit Start Game button to start a new game!</p>
+        </div>
+
+        <button id="start-button" onclick="refresh();">Start Game</button>
+
+        <div id="">
+        <!-- <button id="save-button" onclick="render(); sum();">Draw</button>
+        <button id="reset-button" onclick="refresh();">Reset</button>
+        <button id="fold-button" onclick="refresh();">Fold</button> -->
+        </div>
+
+        <table id="player-1">
+            <tr>
+                <th>Player 1</th>
+            </tr>
+            <tbody id="rows">
+            </tbody>
+        </table>
 
         <table>
             <tr>
-                <th>Test</th>
+                <th>Sum of Cards</th>
             </tr>
-            <tbody id="rows">
-
+            <tbody id="sumrows">
+                <tr id="final">
+                    <td id="data"></td>
+                </tr>
             </tbody>
         </table>
+
         <script src="index.js"></script>
     </body>
 </html>
+
+<!-- WHAT WE NEED
+    -Table to show Player 1 card values
+    -Table to show sum of cards
+    -4 buttons:
+    Start Game
+    Draw
+    Fold
+    Reset
+    -USP- brainstorm a feature to add to README.md
+-->
